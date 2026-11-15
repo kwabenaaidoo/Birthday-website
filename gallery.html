@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Beautiful You 📸</title>
+  <meta name="description" content="A gallery of beautiful moments, and a few reasons you’re special.">
+  <meta name="theme-color" content="#5c1a2e">
+  <meta name="robots" content="noindex, nofollow"><!-- a private gift: keep it out of search engines -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237b2342' d='M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Great+Vibes&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Runs before first paint so the page never flashes the wrong state. */
+    (function (d) {
+      d.classList.add('js');
+      try { if (sessionStorage.getItem('bdayOpened') === '1') d.classList.add('is-open'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z"/></svg><span data-name>My Love</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About You</a></li>
+          <li><a href="memories.html">Memories</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="letter.html">Letter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="page-head" aria-labelledby="pageTitle">
+      <div class="ambient" data-ambient="8" aria-hidden="true"></div>
+      <div class="container">
+        <p class="kicker">Look how beautiful you are.</p>
+        <h1 id="pageTitle">Beautiful You 📸</h1>
+        <div class="divider" aria-hidden="true">♥</div>
+        <p class="lead">Tap any photo to see it full screen. Swipe, or use the arrow keys, to move between them.</p>
+      </div>
+    </section>
+
+    <section class="container" aria-label="Photo gallery">
+      <!-- ✏️ EDIT HERE: each <figure> is one photo.
+           • photo   → change src="assets/images/..." (and the alt text)
+           • caption → the text inside <figcaption> (shown in the full-screen viewer)
+           Add more photos by copying a whole <figure>…</figure> block. 8–15 photos looks best. -->
+      <div class="gallery">
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/hero.jpg" width="1200" height="2133" loading="lazy" decoding="async" alt="Her smiling over her shoulder in a red ruffled top and black trousers, standing on a sunny lawn">
+        </button>
+        <figcaption>That smile ❤️</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo1.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="Her smiling in a white ruffled shirt and striped trousers, leaning against a grey wall">
+        </button>
+        <figcaption>Simply beautiful.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo3.jpg" width="1100" height="950" loading="lazy" decoding="async" alt="Close-up of her smiling softly with a hand resting against her cheek, wearing a yellow top">
+        </button>
+        <figcaption>One of my favourite pictures of you.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo2.jpg" width="810" height="1080" loading="lazy" decoding="async" alt="Her in a yellow African-print dress, hand on hip, smiling beside a car">
+        </button>
+        <figcaption>You didn’t even know how beautiful you looked here.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo5.jpg" width="960" height="1280" loading="lazy" decoding="async" alt="A playful illustrated portrait of her surrounded by tiny cartoon versions of herself, with handwritten text meaning “my little world”">
+        </button>
+        <figcaption>Your little world ✨</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo4.jpg" width="900" height="1600" loading="lazy" decoding="async" alt="Her in a red ruffled top and black trousers, pouting playfully with a hand on her hip">
+        </button>
+        <figcaption>Effortless.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo6.jpg" width="900" height="1537" loading="lazy" decoding="async" alt="A selfie of her in a bright pink top with a calm, gentle smile in front of an orange wall">
+        </button>
+        <figcaption>That gentle look.</figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <button class="g-open" type="button" aria-label="Open photo in full screen">
+          <img src="assets/images/photo7.jpg" width="900" height="1125" loading="lazy" decoding="async" alt="Close-up of her in a red ruffled top with a hand on her hip and a calm, confident look">
+        </button>
+        <figcaption>Pure elegance.</figcaption>
+      </figure>
+      </div>
+    </section>
+
+    <!-- ============ REASONS ============ -->
+    <section class="section reasons" aria-labelledby="reasonsTitle">
+      <div class="container">
+        <div class="reasons__head reveal">
+          <p class="kicker">Here are some things I love about you.</p>
+          <h2 id="reasonsTitle">A Few Reasons Why You’re Special ❤️</h2>
+          <div class="divider" aria-hidden="true">♥</div>
+        </div>
+        <!-- ✏️ EDIT HERE: each <li> is one card. Change the <h3> text; copy a block to add more (6–10 cards works well).
+             Icons available in this file: smile, heart, shield, flower, gem, star, sparkle, crown — copy the <svg> from any card. -->
+        <ul class="reasons__grid">
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8.2 14a4.6 4.6 0 0 0 7.6 0"/><circle cx="9" cy="10" r=".6"/><circle cx="15" cy="10" r=".6"/></svg>
+          <h3>Your beautiful smile</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5s-8-5.2-8-11A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8 2.5c0 5.8-8 11-8 11z"/></svg>
+          <h3>Your kindness</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.3c0 4.6-3 7.7-7 9.7-4-2-7-5.100-7-9.700V6z"/></svg>
+          <h3>Your courage</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="2.2"/><circle cx="12" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="12" r="3"/></svg>
+          <h3>The way you care</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 4h11l4 5-9.500 11.500L2.500 9z"/><path d="M2.500 9h19M9 4l3 5 3-5M12 20.500L9 9m3 11.500L15 9"/></svg>
+          <h3>Your beautiful heart</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.700 5.700 6.300.8-4.600 4.300 1.200 6.200L12 17l-5.600 3 1.200-6.200L3 9.500l6.300-.8z"/></svg>
+          <h3>Your determination</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l1.900 6.100L20 11l-6.100 1.900L12 19l-1.900-6.100L4 11l6.100-1.900z"/><path d="M19 3v4M17 5h4"/></svg>
+          <h3>The way you make ordinary moments special</h3>
+        </li>
+        <li class="reason reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.500 8l4.500 4 4-6.500 4 6.500 4.500-4-1.800 11H5.300z"/></svg>
+          <h3>Simply being you</h3>
+        </li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="next-link" style="background:var(--blush);margin:0;padding-top:2.5rem"><a class="btn btn--wine" href="letter.html">Next: Read my letter 💌</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p class="script">Made with love, for <span data-name>My Love</span> ❤️</p>
+  </footer>
+
+  <!-- effects layers + music (shared by every page) -->
+  <div class="fx" id="fx" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div class="music" id="music" role="group" aria-label="Background music">
+    <button class="music__toggle" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
+      <span class="music__ring"></span><span class="music__ring"></span>
+      <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>
+    </button>
+    <button class="music__mute" id="musicMute" type="button" aria-label="Mute music" aria-pressed="false">
+      <svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+      <svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

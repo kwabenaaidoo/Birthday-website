@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Our Memories ❤️</title>
+  <meta name="description" content="Little moments, big memories.">
+  <meta name="theme-color" content="#5c1a2e">
+  <meta name="robots" content="noindex, nofollow"><!-- a private gift: keep it out of search engines -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237b2342' d='M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Great+Vibes&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Runs before first paint so the page never flashes the wrong state. */
+    (function (d) {
+      d.classList.add('js');
+      try { if (sessionStorage.getItem('bdayOpened') === '1') d.classList.add('is-open'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="memories">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z"/></svg><span data-name>My Love</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About You</a></li>
+          <li><a href="memories.html" aria-current="page">Memories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="letter.html">Letter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="page-head" aria-labelledby="pageTitle">
+      <div class="ambient" data-ambient="8" aria-hidden="true"></div>
+      <div class="container">
+        <p class="kicker">Look at the moments we’ve shared.</p>
+        <h1 id="pageTitle">Little Moments, Big Memories ❤️</h1>
+        <div class="divider" aria-hidden="true">♥</div>
+      </div>
+    </section>
+
+    <section class="timeline container" aria-label="Our memories">
+      <!-- ✏️ EDIT HERE: each <li> is one memory.
+           • photo  → change the src="assets/images/..." (and the alt text)
+           • date   → the line inside <p class="memory__date">  (e.g. "June 2024")
+           • title  → the <h2>      • text → the last <p>
+           Copy a whole <li>…</li> block to add more memories. -->
+      <ol class="timeline__list">
+        <li class="memory reveal">
+          <span class="memory__dot" aria-hidden="true"></span>
+          <article class="memory__card paper">
+            <div class="memory__photo">
+              <img src="assets/images/photo2.jpg" width="810" height="1080" loading="lazy" decoding="async" style="--pos:50% 28%"
+                   alt="Her in a yellow African-print dress, hand on hip, smiling beside a car">
+            </div>
+            <div class="memory__body">
+              <p class="memory__date">The very start</p>
+              <h2>The Beginning</h2>
+              <p>Where our story started...</p>
+            </div>
+          </article>
+        </li>
+        <li class="memory reveal">
+          <span class="memory__dot" aria-hidden="true"></span>
+          <article class="memory__card paper">
+            <div class="memory__photo">
+              <img src="assets/images/photo3.jpg" width="1100" height="950" loading="lazy" decoding="async" style="--pos:45% 40%"
+                   alt="Close-up of her smiling softly with a hand resting against her cheek, wearing a yellow top">
+            </div>
+            <div class="memory__body">
+              <p class="memory__date">One ordinary day</p>
+              <h2>That Random Day</h2>
+              <p>One of those moments I wish I could replay.</p>
+            </div>
+          </article>
+        </li>
+        <li class="memory reveal">
+          <span class="memory__dot" aria-hidden="true"></span>
+          <article class="memory__card paper">
+            <div class="memory__photo">
+              <img src="assets/images/photo6.jpg" width="900" height="1537" loading="lazy" decoding="async" style="--pos:50% 24%"
+                   alt="A selfie of her in a bright pink top with a calm, gentle smile in front of an orange wall">
+            </div>
+            <div class="memory__body">
+              <p class="memory__date">A day I treasure</p>
+              <h2>One of My Favourite Memories</h2>
+              <p>A moment I’ll always remember.</p>
+            </div>
+          </article>
+        </li>
+        <li class="memory reveal">
+          <span class="memory__dot" aria-hidden="true"></span>
+          <article class="memory__card paper">
+            <div class="memory__photo">
+              <img src="assets/images/photo5.jpg" width="960" height="1280" loading="lazy" decoding="async" style="--pos:50% 22%"
+                   alt="A playful illustrated portrait of her surrounded by tiny cartoon versions of herself, with handwritten text meaning “my little world”">
+            </div>
+            <div class="memory__body">
+              <p class="memory__date">Still ahead</p>
+              <h2>More To Come...</h2>
+              <p>Because our story isn’t finished yet.</p>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <p class="next-link"><a class="btn btn--wine" href="gallery.html">Next: Look how beautiful you are →</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p class="script">Made with love, for <span data-name>My Love</span> ❤️</p>
+  </footer>
+
+  <!-- effects layers + music (shared by every page) -->
+  <div class="fx" id="fx" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div class="music" id="music" role="group" aria-label="Background music">
+    <button class="music__toggle" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
+      <span class="music__ring"></span><span class="music__ring"></span>
+      <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>
+    </button>
+    <button class="music__mute" id="musicMute" type="button" aria-label="Mute music" aria-pressed="false">
+      <svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+      <svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

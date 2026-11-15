@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday ❤️</title>
+  <meta name="description" content="A little birthday surprise, made with love.">
+  <meta name="theme-color" content="#5c1a2e">
+  <meta name="robots" content="noindex, nofollow"><!-- a private gift: keep it out of search engines -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237b2342' d='M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Great+Vibes&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Runs before first paint so the page never flashes the wrong state. */
+    (function (d) {
+      d.classList.add('js');
+      try { if (sessionStorage.getItem('bdayOpened') === '1') d.classList.add('is-open'); } catch (e) {}
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-8.5-5.6-8.5-11.4A4.9 4.9 0 0 1 12 7.2a4.9 4.9 0 0 1 8.5 2.4C20.5 15.4 12 21 12 21z"/></svg><span data-name>My Love</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html#about">About You</a></li>
+          <li><a href="memories.html">Memories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="letter.html">Letter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ HERO · THE BIRTHDAY REVEAL ============ -->
+    <section class="hero" id="hero" aria-labelledby="pageTitle">
+      <h1 class="sr-only" id="pageTitle">Happy Birthday, <span data-name>My Love</span></h1>
+      <!-- ✏️ HERO PHOTO: replace assets/images/hero.jpg with her best photograph -->
+      <img class="hero__img" src="assets/images/hero.jpg" width="1200" height="2133" fetchpriority="high"
+           alt="Her smiling over her shoulder in a red ruffled top and black trousers, standing on a sunny lawn">
+      <div class="hero__shade"></div>
+      <div class="ambient" data-ambient="12" aria-hidden="true"></div>
+
+      <!-- Stage 1: before she taps the button -->
+      <div class="hero__stage hero__stage--intro" id="heroIntro">
+        <p class="eyebrow">It’s your birthday…</p>
+        <div class="hero__title" aria-hidden="true">Happy Birthday,
+          <span class="name"><span data-name>My Love</span> ❤️</span>
+        </div>
+        <p class="hero__lead">Today is all about you.</p>
+        <p class="hero__sub script">I made something special for you…</p>
+        <button class="btn btn--primary" id="openBtn" type="button">Open Your Surprise ❤️</button>
+      </div>
+
+      <!-- Stage 2: shown after the button is pressed -->
+      <div class="hero__stage hero__stage--reveal" id="heroReveal">
+        <p class="eyebrow">Let me celebrate you.</p>
+        <!-- ✏️ EDIT HERE: your main birthday message (the first thing she reads after opening) -->
+        <h2 class="reveal__title" id="revealTitle" tabindex="-1">Today the world celebrates you — and so do I.</h2>
+        <p class="reveal__text">I made this little corner of the internet just for you. Take your time, scroll slowly, and enjoy every part of it.</p>
+        <!-- /EDIT -->
+        <div class="countdown glass" id="countdown">
+          <p class="countdown__label" id="cdLabel">Your special day is almost here…</p>
+          <div class="countdown__grid" id="cdGrid" role="timer" aria-label="Time until your birthday">
+            <div><span id="cdD">00</span><small>Days</small></div>
+            <div><span id="cdH">00</span><small>Hours</small></div>
+            <div><span id="cdM">00</span><small>Minutes</small></div>
+            <div><span id="cdS">00</span><small>Seconds</small></div>
+          </div>
+        </div>
+        <a class="scroll-hint" href="#about" aria-label="Continue to the next section">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 9l7 7 7-7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Everything below the hero appears once she has opened the surprise -->
+    <div class="home-rest">
+      <!-- ============ ABOUT HER ============ -->
+      <section class="section about" id="about" aria-labelledby="aboutTitle">
+        <div class="ambient" data-ambient="16" aria-hidden="true"></div>
+        <div class="container about__grid">
+          <figure class="arch reveal">
+            <!-- ✏️ ABOUT PHOTO: replace assets/images/photo1.jpg -->
+            <img src="assets/images/photo1.jpg" width="960" height="1280" loading="lazy" decoding="async"
+                 alt="Her smiling in a white ruffled shirt and striped trousers, leaning against a grey wall">
+          </figure>
+          <div class="about__text reveal">
+            <p class="kicker">Let me celebrate you.</p>
+            <h2 id="aboutTitle">The Girl Behind My Smile</h2>
+            <div class="divider" aria-hidden="true">♥</div>
+            <!-- ✏️✏️ EDIT HERE: write about her in your own words (keep it to one or two short paragraphs) -->
+            <p>You are elegant, wise, courageous, caring and beautiful in ways that go far beyond what a picture can capture…</p>
+            <p>Being around you makes ordinary days feel softer and brighter. Today is your day, and I want you to know how deeply you are loved.</p>
+            <!-- /EDIT -->
+            <p class="signature script">— <span data-from>Kobby</span></p>
+            <div class="about__cta">
+              <a class="btn btn--wine" href="memories.html">See our moments →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="script">Made with love, for <span data-name>My Love</span> ❤️</p>
+  </footer>
+
+  <!-- effects layers + music (shared by every page) -->
+  <div class="fx" id="fx" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div class="music" id="music" role="group" aria-label="Background music">
+    <button class="music__toggle" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
+      <span class="music__ring"></span><span class="music__ring"></span>
+      <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></svg>
+    </button>
+    <button class="music__mute" id="musicMute" type="button" aria-label="Mute music" aria-pressed="false">
+      <svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+      <svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9.5v5h3.5l4.5 3.5V6L7.5 9.5H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
